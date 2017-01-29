@@ -2,7 +2,7 @@ body {
       position: relative; 
 }
 .affix {
-      top:0;
+      top:  0;
       width: 100%;
       z-index: 9999;
 }
@@ -24,9 +24,14 @@ body {
       height: auto;
       transform: translateX(-50%) translateY(-50%);
 }
+.affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+}
 .overlay {
       z-index: 1;
       position: relative;
+      text-align: center;
 }
 .vertical-center {
       min-height: 100%;
@@ -34,4 +39,35 @@ body {
       display: flex;
       align-items: center;
       color: white;
+}
+.sections {
+      position: relative;
+}
+#section1 {
+      text-align: center;
+      padding-top: 170px;
+      height: 500px;
+      color: #fff;
+      background-color: #1E88E5;
+}
+#section2 {
+      text-align: center;
+      padding-top: 170px;
+      height: 500px;
+      color: #fff;
+      background-color: #673ab7;
+}
+#section3 {
+      text-align: center;
+      padding-top: 170px;
+      height: 500px;
+      color: #fff;
+      background-color: #ff9800;
+}
+#section4 {
+      text-align: center;
+      padding-top: 170px;
+      height: 500px;
+      color: #fff;
+      background-color: #00bcd4;
 }
